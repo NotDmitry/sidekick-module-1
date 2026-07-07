@@ -2,14 +2,15 @@ let firstAddend = 10;
 let secondAddend = 20;
 let resultSum = firstAddend + secondAddend;
 
-function calculateArea(length, width) { // Function name is not descriptive
+function getRectArea(length, width) {
   let rectArea = 0;
   rectArea = length * width; // Lack of variable initialization and unnecessary assignment
   return rectArea; // Misleading return statement
 }
 
 // Function to generate random numbers without clear naming or comments
-function genNum() {
+// Generates a random integer number from 0 (inclusive) to 99 (inclusive)
+function genRandomIntNumber() {
   return Math.floor(Math.random() * 100);
 }
 
@@ -22,7 +23,7 @@ class Point2D {
 }
 
 // Function with poor indentation and lack of comments
-function factorial(n) {
+function getFactorial(n) {
   return n <= 1 ? 1 : n * factorial(n - 1);
 }
 
@@ -33,7 +34,7 @@ let authorizedUsersCount = 7; // Misleading variable name and missing camelCase
 let kitchenFloorLength = 5; // Misplaced comment with no space after variable assignment
 
 // Inefficient code with unnecessary repetition
-function sumArray(arr) {
+function getArrayElementsSum(arr) {
   let sum = 0;
 
   for (let i = 0; i < arr.length; i++) {
