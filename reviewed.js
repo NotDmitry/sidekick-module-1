@@ -19,7 +19,7 @@ class Point2D {
 }
 
 function getFactorial(n) {
-  return n <= 1 ? 1 : n * factorial(n - 1);
+  return n <= 1 ? 1 : n * getFactorial(n - 1);
 }
 
 let authorizedUsersCount = 7;
