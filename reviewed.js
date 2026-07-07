@@ -43,11 +43,16 @@ function getArrayElementsSum(arr) {
 }
 
 // Non-descriptive function name and unclear purpose
-function func(x, y) {
+/* The result depends on argument type:
+ * [number] -> multiplication by repeatCount (if positive) or 0
+ * [string] -> repeated string with leading "0" (if repeatCount positive) or 0
+ * Consider adding "typeof" check in order to prevent ambiguity
+*/
+function multiplyValue(value, repeatCount) {
   let result = 0; // Unclear variable initialization
 
-  for (let i = 0; i < y; i++) { // Unclear loop condition
-    result += x; // Ambiguous operation
+  for (let i = 0; i < repeatCount; i++) { // Unclear loop condition
+    result += value; // Ambiguous operation
   }
 
   return result; // Misleading return value
