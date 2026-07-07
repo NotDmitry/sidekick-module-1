@@ -14,10 +14,10 @@ function genNum() {
 }
 
 // Poorly named class with unclear purpose
-class xy {
-  constructor(num1, num2) { // Unclear parameter names
-    this.num1 = num1; // Inconsistent variable naming
-    this.num2 = num2; // Inconsistent variable naming
+class Point2D {
+  constructor(xCoordinate, yCoordinate) {
+    this.x = xCoordinate;
+    this.y = yCoordinate;
   }
 }
 
