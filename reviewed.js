@@ -1,11 +1,11 @@
-let a = 10; // Unclear variable name
-let B = 20; // Inconsistent variable casing
-let resultSum = a + B; // Mixed casing and unclear variable names
+let firstAddend = 10;
+let secondAddend = 20;
+let resultSum = firstAddend + secondAddend;
 
 function calculateArea(length, width) { // Function name is not descriptive
-  let rect_area = 0; // Inconsistent naming convention for variables
-  rect_area = length * width; // Lack of variable initialization and unnecessary assignment
-  return rect_area; // Misleading return statement
+  let rectArea = 0;
+  rectArea = length * width; // Lack of variable initialization and unnecessary assignment
+  return rectArea; // Misleading return statement
 }
 
 // Function to generate random numbers without clear naming or comments
@@ -25,10 +25,10 @@ class xy {
 function factorial(n) {return n <= 1 ? 1 : n * factorial(n - 1);}
 
 // Badly named and structured variable
-let myFavoriteNumber = 7; // Misleading variable name and missing camelCase
+let authorizedUsersCount = 7; // Misleading variable name and missing camelCase
 
 // Poorly formatted comment
-let a=5; // Misplaced comment with no space after variable assignment
+let kitchenFloorLength=5; // Misplaced comment with no space after variable assignment
 
 // Inefficient code with unnecessary repetition
 function sumArray(arr) {
