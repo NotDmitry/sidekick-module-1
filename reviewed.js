@@ -6,13 +6,11 @@ function getRectArea(length, width) {
   return length * width;
 }
 
-// Function to generate random numbers without clear naming or comments
 // Generates a random integer number from 0 (inclusive) to 99 (inclusive)
 function genRandomIntNumber() {
   return Math.floor(Math.random() * 100);
 }
 
-// Poorly named class with unclear purpose
 class Point2D {
   constructor(xCoordinate, yCoordinate) {
     this.x = xCoordinate;
@@ -20,40 +18,35 @@ class Point2D {
   }
 }
 
-// Function with poor indentation and lack of comments
 function getFactorial(n) {
   return n <= 1 ? 1 : n * factorial(n - 1);
 }
 
-// Badly named and structured variable
-let authorizedUsersCount = 7; // Misleading variable name and missing camelCase
+let authorizedUsersCount = 7;
 
-// Poorly formatted comment
-let kitchenFloorLength = 5; // Misplaced comment with no space after variable assignment
+let kitchenFloorLength = 5;
 
-// Inefficient code with unnecessary repetition
 function getArrayElementsSum(arr) {
   let sum = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    sum = sum + arr[i]; // Redundant calculation
+    sum = sum + arr[i];
   }
 
   return sum;
 }
 
-// Non-descriptive function name and unclear purpose
 /* The result depends on argument type:
  * [number] -> multiplication by repeatCount (if positive) or 0
  * [string] -> repeated string with leading "0" (if repeatCount positive) or 0
  * Consider adding "typeof" check in order to prevent ambiguity
 */
 function multiplyValue(value, repeatCount) {
-  let result = 0; // Unclear variable initialization
+  let result = 0;
 
-  for (let i = 0; i < repeatCount; i++) { // Unclear loop condition
-    result += value; // Ambiguous operation
+  for (let i = 0; i < repeatCount; i++) {
+    result += value;
   }
 
-  return result; // Misleading return value
+  return result;
 }
