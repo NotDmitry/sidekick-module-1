@@ -3,9 +3,7 @@ let secondAddend = 20;
 let resultSum = firstAddend + secondAddend;
 
 function getRectArea(length, width) {
-  let rectArea = 0;
-  rectArea = length * width; // Lack of variable initialization and unnecessary assignment
-  return rectArea; // Misleading return statement
+  return length * width;
 }
 
 // Function to generate random numbers without clear naming or comments
