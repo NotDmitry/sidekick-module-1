@@ -1,13 +1,18 @@
-let firstAddend = 10;
-let secondAddend = 20;
-let resultSum = firstAddend + secondAddend;
+const FIRST_ADDEND = 10;
+const SECOND_ADDEND = 20;
+const resultSum = FIRST_ADDEND + SECOND_ADDEND;
 
-function getRectArea(length, width) {
+/**
+* @param {number} length - length of a rectangle
+* @param {number} width - width of a rectangle
+* @returns {number} area - area of a rectangle
+*/
+function getRectangularArea(length, width) {
   return length * width;
 }
 
 // Generates a random integer number from 0 (inclusive) to 99 (inclusive)
-function genRandomIntNumber() {
+function generateRandomInteger() {
   return Math.floor(Math.random() * 100);
 }
 
@@ -18,22 +23,25 @@ class Point2D {
   }
 }
 
+// n! (n factorial) = 1 * 2 * 3 * ... * n
 function getFactorial(n) {
-  return n <= 1 ? 1 : n * getFactorial(n - 1);
-}
-
-let authorizedUsersCount = 7;
-
-let kitchenFloorLength = 5;
-
-function getArrayElementsSum(arr) {
-  let sum = 0;
-
-  for (let i = 0; i < arr.length; i++) {
-    sum = sum + arr[i];
+  // A base case to exit from recursion (to prevent infinite loop)
+  // 1! = 1
+  if (n <= 1) {
+    return 1;
   }
 
-  return sum;
+  return n * getFactorial(n - 1);
+}
+
+// Auth currently in testing phase, used stub instead
+const authorizedUsersCount = 7;
+
+// The kitchen is still being built, temporary hard-coded value
+const kitchenFloorLength = 5;
+
+function getArrayElementsSum(arr) {
+  return arr.reduce((sum, currentValue) => sum + currentValue, 0);
 }
 
 /* The result depends on argument type:
